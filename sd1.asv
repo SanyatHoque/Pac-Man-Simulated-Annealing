@@ -1,0 +1,79 @@
+clear all;clc;
+% 
+load vanilla_3.mat
+x = [distance1_array1; 
+     distance1_array2 zeros(1,400-40);
+     distance1_array3;
+     distance1_array4 zeros(1,400-351);
+     distance1_array5;
+     distance1_array6 zeros(1,400-56);
+     distance1_array7 zeros(1,400-178);
+     distance1_array8(1:400);
+     distance1_array9 zeros(1,400-33);
+     distance1_array10;
+     distance1_array11 zeros(1,400-150);
+     distance1_array12 zeros(1,400-31);
+     distance1_array13;
+     distance1_array14 zeros(1,400-100);
+     distance1_array15;
+     distance1_array16 zeros(1,400-145);
+     distance1_array17 zeros(1,400-319);
+     distance1_array18 zeros(1,400-151);
+     distance1_array19 zeros(1,400-29);
+     distance1_array20 zeros(1,400-18);];
+
+% x = [1 2 3 5;
+%     4 5 6 5;
+%     7 8 9 5];
+% A = sum(x(1:3,1))/3
+% B = sum(x(1:3,2))/3
+% C = sum(x(1:3,1:4))/3
+
+
+mean2 = sum(x2(1:20,1:400))/20   ; %row,clomn
+D2 = std(x2) ;
+upper_bound2 = mean2+D2 ;
+lower_bound = mean2-D2 ;
+
+% load('distance1_array16a2.mat','distance1_array');
+% distance1_array1 = distance1_array
+% load('distance1_array16b2.mat','distance1_array');
+% distance1_array2 = distance1_array
+% load('distance1_array16c2.mat','distance1_array');
+% distance1_array3 = distance1_array
+% load('distance1_array16d2.mat','distance1_array');
+% distance1_array4 = distance1_array
+% load('distance1_array16e2.mat','distance1_array');
+% distance1_array5 = distance1_array
+% load('distance1_array16f2.mat','distance1_array');
+% distance1_array6 = distance1_array
+% load('distance1_array16g2.mat','distance1_array');
+% distance1_array7 = distance1_array
+% load('distance1_array16h2.mat','distance1_array');
+% distance1_array8 = distance1_array
+% load('distance1_array16i2.mat','distance1_array');
+% distance1_array9 = distance1_array
+% load('distance1_array16j2.mat','distance1_array');
+% distance1_array10 = distance1_array
+% load('distance1_array16k2.mat','distance1_array');
+% distance1_array11 = distance1_array
+% load('distance1_array16l2.mat','distance1_array');
+% distance1_array12 = distance1_array
+% load('distance1_array16m2.mat','distance1_array');
+% distance1_array13 = distance1_array
+% load('distance1_array16n2.mat','distance1_array');
+% distance1_array14 = distance1_array
+% load('distance1_array16o2.mat','distance1_array');
+% distance1_array15 = distance1_array
+% load('distance1_array16p2.mat','distance1_array');
+% distance1_array16 = distance1_array
+% load('distance1_array16q2.mat','distance1_array');
+% distance1_array17 = distance1_array
+% load('distance1_array16r2.mat','distance1_array');
+% distance1_array18 = distance1_array
+% load('distance1_array16s2.mat','distance1_array');
+% distance1_array19 = distance1_array
+% load('distance1_array16t2.mat','distance1_array');
+% distance1_array20 = distance1_array
+% save vanilla_3.mat distance1_array1 distance1_array2 distance1_array3 distance1_array4 distance1_array5 distance1_array6 distance1_array7 distance1_array8 distance1_array9 distance1_array10 distance1_array11 distance1_array12 distance1_array13 distance1_array14 distance1_array15 distance1_array16 distance1_array17 distance1_array18 distance1_array19 distance1_array20
+% load vanilla_3.mat

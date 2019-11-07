@@ -1,0 +1,41 @@
+clear all;clc;
+%% Simulated Annealing Demo - Temperature and its corresponding Sig Func
+distance_x = 1:50 ;
+% distance_x = fliplr(distance_x) ;
+scale_y_axis = linspace(1,10^3,numel(distance_x));  % t inversely proportional to Temperature, 
+% 0.9800.^(linspace(1,10^3,numel(1:5)))
+for y = 1:distance_x(end) ;
+Test_scaling_y = (0.9800^scale_y_axis(y))
+Temperature_x1(y) = 10^3*(0.9800^scale_y_axis(y)); % Temperature,
+end
+Test_scaling_y;
+Temperature_x1
+
+figure
+subplot(2,1,1)       % add first plot in 2 x 1 grid
+hold on;
+plot(1:y,Temperature_x1,'-.r*','linewidth',2);
+title('Monotonically Decreasing Temperature Functions')
+ylabel('Temperature')
+xlabel('Manhattan Distance')
+xlim([1 20]);
+ylim([0 1000]);
+hold off;
+grid on
+%% Sigmoid func
+% Test_Temperature = 1 ; 
+for ii = 1:distance_x(end)
+    sigmoid_function_x1(ii) = (1 + exp(-6*((distance_x(ii))/Temperature_x1(ii))))^(-1);
+%  Temperature_x(ii)
+end
+hold on;
+subplot(2,1,2)       % add second plot in 2 x 1 grid
+hold on;
+plot(1:ii,sigmoid_function_x1,'-.r*','linewidth',2) % probability - y axis;k - x axis; 
+hold off;
+xlim([1 14]);
+ylabel('Probability')
+title('Sigmoid Function')
+xlabel('Manhattan Distance')
+ylim([0 1])
+grid on
